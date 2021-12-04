@@ -24,11 +24,11 @@ def predict():
 
 		req_model = str(request.form['model'])
 
-		if req_model == "Random Forest Regressor":
-			final = np.array(final)
-			arr = final.reshape(1, -1)
-			prediction = rf_model.predict(arr)
-			prediction = prediction[0]
+		
+		final = np.array(final)
+		arr = final.reshape(1, -1)
+		prediction = rf_model.predict(arr)
+		prediction = prediction[0]
 
 		if prediction == 0:
 			return render_template("pcos detection.html",pred ='You do not have significant chances of having PCOS. However, if you are experiencing some other symptoms or feeling that you need a diagnosis, it is good to bring it up in your next doctor\'s appointment.')
