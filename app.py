@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__,template_folder='.')
 
-rf_model=pickle.load(open('model_rf','rb'))
+rf_model=pickle.load(open('model_rf2','rb'))
 
 @app.route('/',methods=['GET'])
 def main():
@@ -20,7 +20,7 @@ def predict():
 		final.append(float(request.form['hairgrowth']))
 		final.append(float(request.form['weightgain']))
 		final.append(float(request.form['cycle']))
-		#final.append(float(request.form['pimple']))
+		final.append(float(request.form['pimple']))
 
 		req_model = str(request.form['model'])
 
