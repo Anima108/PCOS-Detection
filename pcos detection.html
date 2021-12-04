@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+ <head>
+ 	<title></title>
+ 	<style type="text/css">
+ 		*{
+ 			margin:0;
+ 			padding:0; 
+ 		}
+ 		a:link, a:visited {
+         	background-color: #A9A9A9;
+         	color: white;
+         	padding: 10px 15px;
+         	margin:auto;
+         	text-align: center;
+         	text-decoration: none;
+         	display: inline-block;
+        }
+        a:hover, a:active {
+        	margin:auto;
+          	background-color: powderblue;
+        }
+ 		.regform{
+ 			width: 800px;
+ 			background-color: rgb(0,0,0,0.6);
+ 			margin:auto;
+ 			color: #FFFFFF;
+ 			padding: 10px 0px 10px 0px;
+ 			text-align: center;
+ 			border-radius: 15px 15px 0px 0px; 
+ 		}
+ 		.main{
+ 			background-color: rgb(0,0,0,0.5);
+ 			width: 800px;
+ 			margin:auto ;
+ 		}
+ 		form{
+ 			padding: 10px;
+ 		}
+ 		.name{
+ 			margin-left: 25px;
+ 			margin-top: 30px;
+ 			width:125px;
+ 			color:white;
+ 			font-size: 18px;
+ 			font-weight: 700; 
+ 		}
+ 		.amount{
+ 			position: relative;
+ 			left: 200px;
+ 			top: -37px;
+ 			line-height: 40px;
+ 			border-radius: 6px;
+ 			padding: 0 22px;
+ 			font-size: 16px;
+ 		}
+ 		.option{
+ 			position: relative;
+ 			left: 200px;
+ 			top: -37px;
+ 			line-height: 40px;
+ 			width: 532px;
+ 			height: 40px;
+ 			border-radius: 6px;
+ 			padding: 0 22px;
+ 			font-size: 16px;
+ 			color: black;
+ 			outline:none;
+ 			overflow: hidden;
+ 		}
+ 		.option option{
+ 			font-size: 20px;
+ 		}
+ 		button{
+ 			background-color: #3BAF9F;
+ 			display: block;
+ 			margin: 20px 0px 0px 20px;
+ 			text-align: center;
+ 			border-radius: 12px;
+ 			border: 2px solid #366473;
+ 			padding: 14px 110px;
+ 			outline: none;
+ 			color: white;
+ 			cursor:pointer;
+ 			transition: 0.25px;
+ 		}
+ 		button:hover{
+ 			background-color:#5390F5;
+ 		}
+ 	</style>
+ </head> 
+ <body style="background-image: url('https://st4.depositphotos.com/21175540/37834/v/600/depositphotos_378345124-stock-illustration-pcos-anatomical-scheme-of-uterus.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+ 	<div class= "regform"><h1> PCOS PRE-DIAGNOSIS</h1></div>
+ 	<br><h3 style="color: black;"align="center"><b></b>{{pred}}</b>
+ 	</h3>
+ 	<br>
+ 	<div class="main">
+ 		<form action="/" method="POST" class="col s12" >
+ 			<div id="name">
+ 				<h2 class="name">SKIN DARKENING</h2>
+ 			 	<input class="amount" type="text" name="skindarkening"><br>
+ 			<div id="name">
+ 				<h2 class="name">HAIR GROWTH</h2>
+ 			 	<input class="amount" type="text" name="hairgrowth"><br>
+ 			<div id="name">
+ 				<h2 class="name">WEIGHT GAIN</h2>
+ 			 	<input class="amount" type="text" name="weightgain"><br>
+ 			<div id="name">
+ 				<h2 class="name">CYCLE(R/I)</h2>
+ 			 	<input class="amount" type="text" name="cycle"><br>
+ 			<div id="name">
+ 				<h2 class="name">PIMPLES</h2>
+ 			 	<input class="amount" type="text" name="pimple"><br>
+
+ 			<h2 class="name">SELECT MODEL</h2>
+ 			<select class="option" name="model">
+ 			<option disabled="disabled" selected="selected">--Choose option</option>
+ 			<option> Random Forest Regressor</option>
+ 			
+ 				
+ 			</select><br>
+ 			<button type="submit">Predict</button>
+ 			<p class ="result"></p>
+
+
+
+
+ 		</form>
+ 	</div>
+ 	
+ 	<p><a href="https://github.com/akankshatanwar1701/AQI-Prediction">Github</a></p>
+
+ 	<p><b><em style="color: black">Akanksha -- 2K18/IT/014</em></b></p>
+ 	<p><b><em style="color: black">Anima -- 2K18/IT/021</em></b></p>
+ </body>
+</html> 
