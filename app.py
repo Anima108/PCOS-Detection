@@ -20,9 +20,8 @@ def predict():
 		final.append(float(request.form['hairgrowth']))
 		final.append(float(request.form['weightgain']))
 		final.append(float(request.form['cycle']))
-		final.append(float(request.form['pimple']))
+		final.append(float(request.form['fastfood']))
 
-		req_model = str(request.form['model'])
 
 		
 		final = np.array(final)
